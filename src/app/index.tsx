@@ -1,10 +1,21 @@
-import { Text, View, StyleSheet } from "react-native";
+import Header from "@/components/Header";
+import Post from "@/components/Post";
+import { ScrollView, StyleSheet } from "react-native";
+
 
 export default function Index() {
   return (
-    <View style={styles.container}>
-      <Text>Ahora te toca a ti.</Text>
-    </View>
+    <ScrollView className="bg-red-300 flex h-full w-full">
+      <Header></Header>
+      <Post username="christian_tpx"></Post>
+      <Post username="christian_tpx"></Post>
+      <Post username="christian_tpx"></Post>
+      <Post username="its_jmatu"></Post>
+      <Post username="danii._ps"></Post>
+      <Post username="formula_arcana3"></Post>
+      <Post username="priv_maripazz"></Post>
+      <Post username="pameferrr"></Post>
+    </ScrollView>
   );
 }
 
